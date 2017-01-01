@@ -1,0 +1,27 @@
+{
+  "name": "pug-talk",
+  "version": "1.0.0",
+  "description": "Pug Lightning Talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdwinck/pug-talk.git"
+  },
+  "keywords": [
+    "pug",
+    "javascript"
+  ],
+  "author": "Kyle Winckler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdwinck/pug-talk/issues"
+  },
+  "homepage": "https://github.com/kdwinck/pug-talk#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}

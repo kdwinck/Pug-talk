@@ -2,18 +2,23 @@ doctype
 //- doctype defaults to html, can be xml, strict, etc...
 html
   head
-    title= title
-    //- linking a stylesheet - do last
-    link(rel="stylesheet", href="/basic/style.css")
+    title Pug Demo
+    link(rel="stylesheet", href="/style/style.css")
 
   body
-    h1 Let's talk about pug
+    h2 Let's code some pug!
 
     section
       h2 This is pug!
       p Pug is a template engine implemented in javascript using node. It compiles into standard HTML. Pug relies on indention rather than opening and closing tags to create elements. Pug was formally known as Jade.
 
+    //- more expilicit version of div
+    //- div is default so you could just write
+    //-  #div
     div(id="div")
+      //- below notic how the equals sign only has a space on the right side
+      //- this is pretty important in pug. having space on both sides will
+      //- break it
       h2= h2
       ul
         li= item1
@@ -27,13 +32,13 @@ html
       input(type="submit", value="submit")
 
     p
-      a(href="https://www.npmjs.com/package/pug") this is a link
+      a(href="https://pugjs.org/api/getting-started.html") Best link ever!
 
     img(src="http://prismmagazine.ca/wp-content/uploads/2015/03/pug-life-funny-pictures.jpg")
 
+    //- additional talking points if time permits
+    //- go to docs and show them a couple cool things
 
-    //- pug will let you reuse pug files as templates
-    //- for example you could create a header file and reuse
-    //- that file on multiple pug files  --include <filepath>
-
-    //- to make multiple paragraphs back to back you can use pipes |
+    //- extends
+    //- code
+    //- inherites

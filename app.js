@@ -13,7 +13,7 @@ let sampleDiv = {
   item4: 'Awesome file symbol'
 }
 
-// app.use(express.static('basic'))
+app.use(express.static(__dirname + '/public'))
 
 app.set('view engine', 'pug')
 
